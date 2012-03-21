@@ -1,0 +1,8 @@
+www:
+  type: php
+  approot: webhook-php
+  config:
+      smtp_server: smtp.mailgun.org
+      smtp_port: 25
+      smtp_username: postmaster@MYDOMAIN.mailgun.org
+      smtp_password: MAILGUN_PASSWORD

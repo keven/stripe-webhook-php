@@ -1,0 +1,24 @@
+Webhook-Mailer: A simple example of using Stripe webhooks in PHP
+----------------------------------------------------------------
+
+This example was built on dotCloud, modified from the original https://github.com/boucher/stripe-webhook-mailer.
+
+The app sends an email anytime an charge.payment_succeeded or invoice.payment_succeeded Stripe event webhook is received. 
+
+To deploy on dotCloud:
+
+1. Create a new dotCloud app
+    dotCloud create <APP_NAME>
+    
+2. Set up mailgun account information in dotcloud.yml
+
+3. Add your stripe api key to your php file
+	https://manage.stripe.com/#account/apikeys
+
+4. Add your webhook url to your stripe dashboard
+	https://manage.stripe.com/#account/webhooks
+
+5. Customize your email body
+
+6. Deploy your app to dotCloud by 
+    dotCloud push <APP_NAME> <DIRECTORY_TO_APP_ROOT>
